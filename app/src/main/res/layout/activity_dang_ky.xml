@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DangKyActivity">
+
+    <TextView
+        android:id="@+id/tvTitle_dangky"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dang Ky Sinh Vien"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="@android:color/holo_red_dark"
+        />
+    <ImageView
+        android:id="@+id/imgDangKy_dangky"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tvTitle_dangky"
+        android:scaleType="fitXY"
+        android:layout_marginTop="20dp"
+        android:src="@android:drawable/ic_menu_report_image"/>
+
+    <EditText
+        android:id="@+id/edtTaiKhoan_dangky"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhap tai khoan"
+        android:layout_below="@id/imgDangKy_dangky"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/edtMatKhau_dangky"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mat khau"
+        android:layout_below="@id/edtTaiKhoan_dangky"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btnHuy_dangky"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="huy"
+        android:layout_below="@+id/edtMatKhau_dangky"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"/>
+
+    <Button
+        android:id="@+id/btnXacNhan_dangky"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xac Nhan"
+        android:layout_below="@+id/edtMatKhau_dangky"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"/>
+
+</RelativeLayout>

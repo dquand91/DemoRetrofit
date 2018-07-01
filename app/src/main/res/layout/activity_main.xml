@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitle_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dang nhap he thong"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="@android:color/holo_red_dark"
+        />
+
+    <EditText
+        android:id="@+id/edtTaiKhoan_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhap tai khoan"
+        android:layout_below="@id/tvTitle_main"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/edtMatKhau_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mat khau"
+        android:layout_below="@id/edtTaiKhoan_main"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/btnDangKy_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dang ky"
+        android:layout_below="@+id/edtMatKhau_main"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"/>
+
+    <Button
+        android:id="@+id/btnDangNhap_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dang nhap"
+        android:layout_below="@+id/edtMatKhau_main"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"/>
+
+</RelativeLayout>
