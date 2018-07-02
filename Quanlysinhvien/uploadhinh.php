@@ -2,6 +2,9 @@
 
 	$file_path = "image/"; // noi chua file upload tư client len server
 
+	// Đơn giản nhất, uploaded_file là tham số cần truyền vào API và yêu cầu client phải gửi lên.
+	// Từ đó, server sẽ dựa vào cái "uploaded_file" này để lấy data từ client gửi lên.
+
 	// Sau khi upload len, file sẽ nằm trong thư mục "tmp_name" để lấy ra được dữ liệu ra thì dùng biến $_FILES
 	// $_FILES['uploaded_file']['name'] => uploaded_file  là biến chứa file đã update, do mình đặt
 	// name là thuôc tính muốn lấy, ở đây là lấy tên(name).

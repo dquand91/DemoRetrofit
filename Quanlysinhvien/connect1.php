@@ -5,9 +5,7 @@
 	$password = "";
 	$databasename = "quanlysinhvien";
 
-	$connect = mysql_connect($hostname, $username, $password, $databasename);
-	
-	
+	$connect123 = mysqli_connect($hostname, $username, $password, $databasename);
 
 
  ?>

@@ -1,6 +1,9 @@
 package quanduong.com.demoretrofit.RetrofitService;
 
+import java.util.List;
+
 import okhttp3.MultipartBody;
+import quanduong.com.demoretrofit.Model.SinhVien;
 import retrofit2.Call;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
@@ -32,6 +35,15 @@ public interface DataClientListener {
 	Call<String> InsertData123(@Field("taikhoan") String taiKhoanTruyen,
 							   @Field("matkhau") String matKhauTruyen,
 							   @Field("hinhanh") String hinhanhTruyen);
+
+
+	// Call<List<SinhVien>> server sẽ response data dạng object (SinhVien) về cho client.
+	// Ở đây là 1 list Object luôn. Nếu muốn 1 Object thôi thì để Call<SinhVien>
+	// @Field("taikhoan123") => là tham số mà API server yêu cầu mình truyền vào. Ở đây tham số tên là taikhoan123
+	@FormUrlEncoded
+	@POST("login.php")
+	Call<List<SinhVien>> LoginData123(@Field("taikhoan123") String userName,
+									  @Field("matkhau123") String password);
 
 
 
